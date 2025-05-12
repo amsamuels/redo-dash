@@ -30,28 +30,26 @@ export function FeatureSection() {
   ];
 
   return (
-    <section id="features" className="py-20 bg-muted/50">
-      <div className="container px-4 md:px-6">
-        <div className="flex flex-col items-center justify-center gap-4 text-center">
-          <div className="space-y-2">
-            <div
-              className="inline-block rounded-lg bg-muted px-3 py-1 text-sm"
-              style={{
-                background:
-                  'linear-gradient(90deg, rgba(131,58,180,0.2) 0%, rgba(253,29,29,0.2) 50%, rgba(252,176,69,0.2) 100%)',
-              }}
-            >
-              Powerful Features
-            </div>
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-              Everything you need to supercharge your links
-            </h2>
-            <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              Bouncy.ai provides all the tools you need to create, manage, and analyze your links.
-            </p>
+    <section id="features" className="w-full py-12 md:py-20 bg-muted/50">
+      <div className="container flex flex-col items-center gap-4 text-center">
+        <div className="space-y-2">
+          <div
+            className="inline-block rounded-lg bg-muted px-3 py-1 text-sm"
+            style={{
+              background:
+                'linear-gradient(90deg, rgba(131,58,180,0.2) 0%, rgba(253,29,29,0.2) 50%, rgba(252,176,69,0.2) 100%)',
+            }}
+          >
+            Powerful Features
           </div>
+          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+            Everything you need to supercharge your links
+          </h2>
+          <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+            Bouncy.ai provides all the tools you need to create, manage, and analyze your links.
+          </p>
         </div>
-        <div className="mx-auto grid max-w-5xl grid-cols-1 gap-6 md:grid-cols-2 lg:gap-8 pt-12">
+        <div className="mx-auto grid max-w-6xl grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4 pt-12">
           {features.map((feature, index) => (
             <Card key={index} className="transition-all duration-200 hover:shadow-md dark:hover:shadow-white/5">
               <CardHeader className="pb-2">

@@ -1,11 +1,10 @@
 import { create } from 'zustand';
 
 export type BackendUser = {
+  userId: string
   name: string;
   email: string;
-  auth0_sub: string;
   role: 'free' | 'premium' | 'enterprise'; 
-  created_at: string;
 };
 
 type UserStore = {

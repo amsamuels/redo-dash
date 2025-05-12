@@ -130,7 +130,13 @@ export function LinkList({ links, onDeleteLink }: LinkListProps) {
                     </div>
                   </TableCell>
                   <TableCell className="hidden md:table-cell">
-                    {formatDistanceToNow(new Date(link.createdAt), { addSuffix: true })}
+                  {link.createdAt
+  ? formatDistanceToNow(
+      new Date(link.createdAt.replace(/\.\d+Z$/, 'Z')),
+      { addSuffix: true }
+    )
+  : 'Unknown'}
+                  
                   </TableCell>
                   <TableCell className="text-right">{link.clicks}</TableCell>
                   <TableCell className="hidden md:table-cell">

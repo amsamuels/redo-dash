@@ -32,7 +32,7 @@ export function HeroSection() {
             Create powerful, branded redirect links with real-time analytics. Boost click-through rates and enhance brand trust.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-4">
-            <Link href="/signup">
+          <Link  href="/api/auth/signup">
               <Button size="lg" className="gap-1 group">
                 Get started
                 <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
